@@ -21,3 +21,7 @@ Problème : removeEventListener impossible à utiliser dans ce cas
 	document.getElementById("bouton").addEventListener("click", function (e) {
 		console.log("Evènement : "+e.type +", texte de la cible : "+e.targer.textContent);
 	});
+
+	document.addEventListener("onkeypress", function(e){
+		console.log('Vous avez appuyé sur la touche '+String.fromCharCode(e.charCode));
+	});
